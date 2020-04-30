@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.rowclass
+{
+	margin: 50px;
+}
+.w3-third{
+width : 250px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="w3-container w3-teal">
+  <h2>Input Form</h2>
+</div>
+<br><br>
+
+
+
+<div class="w3-card-4">
+<br><br>
+	<div>
+    	<label for="favorite-animal" style="margin:30px;margin-left:50px;">Teachers Details</label><br><br>
+	</div>
+<form class="w3-container" action="addteacher" method="post">	
+      {% csrf_token %}	
+        <table style="margin:30px;spacing:15px;" cellspacing="15">
+        	<tr class="rowclass">
+        		<td>
+                        <label >Tearcher Name</label>
+                </td>
+                <td>
+                    <div class="w3-third">
+    					<input class="w3-input w3-border" name="Teacher_Name"type="text" placeholder="One">
+  				    </div>
+            	</td>
+                <td>
+                		<label >Subjects</label>
+                </td>
+                <td>
+  			    	<div class="w3-third">
+   		       			 <input class="w3-input w3-border" name="Teacher_Subjects" type="text" placeholder="Two">
+  			    	</div>
+                </td>
+                <td>
+                		<label >Subjects Code</label>
+                </td>
+                <td>
+  			    	<div class="w3-third">
+   		       			 <input class="w3-input w3-border" name="Teacher_Subjects_Code" type="text" placeholder="Two">
+  			    	</div>
+                </td>
+                
+        </tr>
+        <tr class="rowclass">
+        		<td>
+                        <label >Tearcher Username</label>
+                </td>
+                <td>
+                    <div class="w3-third">
+    					<input class="w3-input w3-border" name="Teacher_Username" type="text" placeholder="Username">
+  				    </div>
+            	</td>
+                <td>
+                		<label >Teacher Password</label>
+                </td>
+                <td>
+  			    	<div class="w3-third">
+   		       			 <input class="w3-input w3-border" name="Teacher_Password" type="text" placeholder="Password">
+  			    	</div>
+                </td>
+                <td>
+                		<label >Teacher Password Confirm</label>
+                </td>
+                <td>
+  			    	<div class="w3-third">
+   		       			 <input class="w3-input w3-border" name="Teacher_Password2" type="text" placeholder="Password">
+  			    	</div>
+                </td>
+                
+        </tr>
+        
+	</table>
+   
+<br><br>
+<center><input type="submit" value="Submit"></center>
+<br><br>
+</form>
+</div>
+
+</body>
+</html> 
